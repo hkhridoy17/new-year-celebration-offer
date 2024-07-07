@@ -7,7 +7,7 @@
 
 /* primary styles */
 section {
-  margin: 0px auto 50px auto;
+  margin: 0px auto 100px auto;
 }
 
 /* header styles */
@@ -259,3 +259,197 @@ header {
 }
 
 /* holiday sale section styles */
+#holiday-sale {
+  width: 1320px;
+  height: 986px;
+  background-image: url("assets/images/Rectangle 2.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sale-content {
+  height: 266px;
+  width: 1068px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sale-content h4 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+}
+.sale-content h1 {
+  font-family: Merriweather;
+  font-size: 72px;
+  margin-top: 16px;
+}
+.sale-content span {
+  color: red;
+}
+.sale-content p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 28px;
+  opacity: 0.6;
+}
+.sale-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.sale-image .sale-gift {
+  width: 675px;
+  height: 578px;
+}
+.sale-image .sale-discount {
+  position: absolute;
+  bottom: 300px;
+  right: 50px;
+}
+
+/* items portfolio section styles */
+#item-portfolio {
+  height: 1163px;
+  width: 1320px;
+}
+.portfolio {
+  text-align: left;
+  height: 191px;
+  width: 896px;
+  margin-bottom: 48px;
+}
+.portfolio h4 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  color: red;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.portfolio h2 {
+  font-family: Merriweather;
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+.portfolio p {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.6;
+}
+.item-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+.item-image img {
+  width: 424px;
+  height: 450px;
+}
+
+/* newsletter section styles */
+#newsletter {
+  width: 1320px;
+  height: 616px;
+  border-radius: 16px;
+  background-color: rgba(255, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.newsletter-image {
+  width: 150px;
+  height: 150px;
+}
+.newsletter-content {
+  width: 896px;
+  text-align: center;
+}
+.newsletter-content h1 {
+  font-family: Merriweather;
+  font-size: 48px;
+  margin-bottom: 22px;
+}
+.newsletter-content p {
+  font-family: Inter;
+  font-size: 20px;
+  opacity: 0.6;
+  line-height: 32px;
+}
+.newsletter-btn input[type="email"] {
+  width: 438px;
+  height: 72px;
+  font-family: Inter;
+  font-size: 18px;
+  padding-left: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: none;
+}
+.newsletter-btn input[type="submit"] {
+  width: 210px;
+  height: 72px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: red;
+  color: white;
+  padding-left: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: none;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+/* footer styles */
+footer {
+}
+.footer-content {
+  width: 1600px;
+  height: 609px;
+  margin: 0 auto;
+  background-color: #070211;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+hr {
+  width: 1320px;
+  opacity: 0.5;
+  margin: 0 auto;
+}
+.footer-row-1,
+.footer-row-2,
+.footer-row-3 {
+  padding: 50px 140px;
+}
+.footer-row-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 200px;
+}
+.footer-row-2 {
+  text-align: center;
+  font-size: 80px;
+}
+.footer-row-2 a {
+  margin: 0 10px;
+}
+.footer-row-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
