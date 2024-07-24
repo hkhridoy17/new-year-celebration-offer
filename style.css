@@ -4,10 +4,25 @@
   margin: 0;
   padding: 0;
 }
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 /* primary styles */
+header,
 section {
-  margin: 0px auto 100px auto;
+  max-width: 1320px;
+  max-width: 0 auto;
+}
+#offer,
+#party,
+#address,
+#new-offer,
+#holiday-sale,
+#item-portfolio,
+#newsletter {
+  margin: 0 auto 100px auto;
 }
 
 /* header styles */
@@ -22,21 +37,17 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 16px;
-  height: 600px;
-  width: 1320px;
-  margin: 50px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 25px auto 50px auto;
 }
 #header-content {
+  margin: 0 auto;
+  padding: 200px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  width: 632px;
-  height: 246px;
+  text-align: center;
 }
 #header-content p {
   font-family: Merriweather;
@@ -50,13 +61,13 @@ header {
 
 /* offer section styles */
 .offer-info {
+  max-width: 700px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  width: 803px;
-  height: 806px;
+  gap: 10px;
   text-align: center;
 }
 .offer-info h1 {
@@ -68,7 +79,7 @@ header {
 }
 .offer-info h4 {
   font-family: Inter;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
   color: red;
   margin-bottom: 16px;
@@ -81,14 +92,11 @@ header {
   margin-bottom: 48px;
 }
 .offer-info img {
-  height: 500px;
-  width: 803px;
+  width: 100%;
 }
 
 /* welcome party section styles */
 #party {
-  height: 600px;
-  width: 1320px;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 1),
@@ -101,12 +109,11 @@ header {
   border-radius: 16px;
 }
 .party-content {
-  margin: 68px 120px;
-  height: 600px;
+  padding: 80px 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 100px;
 }
 .party-column-1 h1 {
   font-family: Merriweather;
@@ -115,7 +122,6 @@ header {
   line-height: 88px;
   letter-spacing: 11px;
   margin-bottom: 24px;
-  margin-right: 94px;
 }
 .party-column-1 p {
   font-family: Inter;
@@ -124,7 +130,6 @@ header {
   opacity: 0.8;
   line-height: 30px;
   margin-bottom: 48px;
-  margin-right: 38px;
 }
 .party-column-1 a {
   font-family: Inter;
@@ -135,8 +140,7 @@ header {
   text-decoration: none;
 }
 .party-column-2 img {
-  height: 465px;
-  width: 320px;
+  width: 100%;
 }
 
 /* address section styles */
@@ -146,13 +150,10 @@ header {
     rgba(255, 0, 0, 0.1),
     rgba(255, 0, 0, 0)
   );
-  height: 482px;
-  width: 1320px;
   border-radius: 16px;
 }
 .address-content {
-  height: 482px;
-  width: 1320px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,47 +185,40 @@ header {
 
 /* new offer section styles */
 #new-offer {
-  height: 463px;
-  width: 1320px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  gap: 100px;
 }
 .new-offer-content {
-  width: 393px;
-  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 .new-offer-content h4 {
   font-family: Inter;
   font-size: 24px;
   font-weight: 500;
   color: red;
-  margin-bottom: 16px;
 }
 .new-offer-content h2 {
   font-family: Merriweather;
   font-size: 48px;
-  line-height: 32px;
-  margin-bottom: 22px;
 }
-.new-offer-content p {
+.new-offer-content p,
+.new-offer-wish p {
   font-family: Inter;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 26px;
   opacity: 0.6;
   text-align: justify;
-  margin-bottom: 22px;
 }
 .new-offer-image {
-  /* margin: 0 auto; */
-  height: 450px;
-  width: 450px;
   text-align: center;
-  margin: 0 auto;
 }
 .new-offer-image img {
-  text-align: center;
-  width: 350px;
-  height: 350px;
+  width: 100%;
   padding: 15px;
   border: 10px solid red;
   border-radius: 50%;
@@ -232,95 +226,76 @@ header {
 .new-offer-wish {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  justify-content: center;
+  gap: 30px;
 }
-.wish-row-1 {
-  width: 350px;
-  padding-left: 50px;
-}
-.wish-row-1 h2 {
+.new-offer-wish h2 {
   font-family: Inter;
   font-size: 48px;
   font-weight: bold;
   color: red;
 }
-.wish-row-1 p {
-  font-family: Inter;
-  font-size: 20px;
-  opacity: 0.6;
-}
-.wish-row-2 {
-  width: 350px;
-  padding-left: 50px;
-}
-.wish-row-2 img {
-  width: 140px;
-  height: 140px;
+.new-offer-wish img {
+  width: 40%;
 }
 
 /* holiday sale section styles */
 #holiday-sale {
-  width: 1320px;
-  height: 986px;
-  background-image: url("assets/images/Rectangle 2.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 400px;
 }
 .sale-content {
-  height: 266px;
-  width: 1068px;
+  max-width: 1060px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .sale-content h4 {
   font-family: Inter;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
-  margin-top: 0;
 }
 .sale-content h1 {
   font-family: Merriweather;
   font-size: 72px;
-  margin-top: 16px;
 }
 .sale-content span {
   color: red;
 }
 .sale-content p {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
-  margin-top: 28px;
   opacity: 0.6;
 }
 .sale-image {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  border-radius: 16px 0 16px 16px;
   position: relative;
 }
 .sale-image .sale-gift {
-  width: 675px;
-  height: 578px;
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 .sale-image .sale-discount {
+  width: 30%;
   position: absolute;
-  bottom: 300px;
+  bottom: 50px;
   right: 50px;
 }
 
 /* items portfolio section styles */
-#item-portfolio {
-  height: 1163px;
-  width: 1320px;
-}
 .portfolio {
-  text-align: left;
-  height: 191px;
-  width: 896px;
+  max-width: 800px;
   margin-bottom: 48px;
 }
 .portfolio h4 {
@@ -329,12 +304,10 @@ header {
   font-weight: 500;
   color: red;
   margin-bottom: 16px;
-  margin-top: 0;
 }
 .portfolio h2 {
   font-family: Merriweather;
   font-size: 48px;
-  margin-top: 0;
   margin-bottom: 22px;
 }
 .portfolio p {
@@ -344,33 +317,33 @@ header {
   opacity: 0.6;
 }
 .item-image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 .item-image img {
-  width: 424px;
-  height: 450px;
+  width: 100%;
 }
 
 /* newsletter section styles */
 #newsletter {
-  width: 1320px;
-  height: 616px;
   border-radius: 16px;
   background-color: rgba(255, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 30px;
+  padding: 80px 0;
 }
 .newsletter-image {
-  width: 150px;
-  height: 150px;
+  text-align: center;
+}
+.newsletter-image img {
+  width: 80%;
 }
 .newsletter-content {
-  width: 896px;
+  max-width: 850px;
   text-align: center;
 }
 .newsletter-content h1 {
@@ -384,25 +357,27 @@ header {
   opacity: 0.6;
   line-height: 32px;
 }
+.newsletter-btn {
+  width: 80%;
+  text-align: center;
+}
 .newsletter-btn input[type="email"] {
-  width: 438px;
-  height: 72px;
+  width: 40%;
   font-family: Inter;
-  font-size: 18px;
-  padding-left: 20px;
+  font-size: 20px;
+  padding: 20px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   border: none;
 }
 .newsletter-btn input[type="submit"] {
-  width: 210px;
-  height: 72px;
+  width: 20%;
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
   background-color: red;
   color: white;
-  padding-left: 20px;
+  padding: 20px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border: none;
@@ -450,4 +425,10 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* hide section */
+.hide,
+#hide {
+  display: none;
 }

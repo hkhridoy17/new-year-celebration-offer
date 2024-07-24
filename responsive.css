@@ -1,0 +1,180 @@
+/* responsive design for small device */
+@media screen and (max-width: 576px) {
+  header,
+  section,
+  #offer,
+  #party,
+  #address,
+  #new-offer,
+  #holiday-sale,
+  #item-portfolio,
+  #newsletter {
+    max-width: 95vw;
+  }
+
+  #header-content {
+    padding: 40px 0;
+  }
+  #header-content p {
+    font-size: 20px;
+  }
+  #header-content h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .offer-info h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+  }
+  .offer-info h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .offer-info p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .offer-info img {
+    width: 90%;
+  }
+
+  .party-content {
+    padding: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .party-column-1 h1 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 5px;
+  }
+  .party-column-1 p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .party-column-1 a {
+    font-size: 20px;
+  }
+  .party-column-2 {
+    text-align: center;
+  }
+  .party-column-2 img {
+    width: 60%;
+  }
+
+  .address-content {
+    padding: 30px;
+  }
+  .address-content p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .address-content button {
+    font-size: 14px;
+    padding: 12px 20px;
+    margin-top: 20px;
+  }
+
+  #new-offer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .new-offer-content,
+  .new-offer-wish {
+    gap: 20px;
+  }
+  .new-offer-content h4 {
+    font-size: 20px;
+  }
+  .new-offer-content h2,
+  .new-offer-wish h2 {
+    font-size: 40px;
+  }
+  .new-offer-content p,
+  .new-offer-wish p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .new-offer-image img {
+    width: 70%;
+  }
+
+  #holiday-sale {
+    gap: 150px;
+  }
+  .sale-content h4 {
+    font-size: 20px;
+  }
+  .sale-content h1 {
+    font-size: 40px;
+  }
+  .sale-content p {
+    font-size: 16px;
+  }
+  .sale-image {
+    height: 100px;
+  }
+  .sale-image .sale-gift {
+    left: 10px;
+  }
+  .sale-image .sale-discount {
+    right: 10px;
+  }
+
+  .portfolio h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .portfolio h2 {
+    font-family: Merriweather;
+    font-size: 36px;
+    margin-bottom: 22px;
+  }
+  .portfolio p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .item-image {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #newsletter {
+    gap: 20px;
+    padding: 50px 10px;
+  }
+  .newsletter-image img {
+    width: 50%;
+  }
+  .newsletter-content h1 {
+    font-size: 32px;
+  }
+  .newsletter-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .newsletter-btn {
+    width: 90%;
+  }
+  .newsletter-btn input[type="email"] {
+    width: 60%;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .newsletter-btn input[type="submit"] {
+    width: 30%;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* responsive design for medium device */
+@media screen and (min-width: 576.02px) and (max-width: 992px) {
+}
+
+/* responsive design for large device */
+@media screen and (min-width: 992.02px) {
+  /* default styles */
+}
