@@ -1,7 +1,9 @@
-/* responsive design for small device */
+/* RESPONSIVE FOR SMALL DEVICE */
 @media screen and (max-width: 576px) {
   header,
-  section,
+  section {
+    max-width: 95vw;
+  }
   #offer,
   #party,
   #address,
@@ -10,8 +12,10 @@
   #item-portfolio,
   #newsletter {
     max-width: 95vw;
+    margin: 0 auto 70px auto;
   }
 
+  /* header styles */
   #header-content {
     padding: 40px 0;
   }
@@ -23,8 +27,9 @@
     line-height: 36px;
   }
 
+  /* offer section styles */
   .offer-info h1 {
-    font-size: 56px;
+    font-size: 48px;
     margin-bottom: 10px;
   }
   .offer-info h4 {
@@ -39,6 +44,7 @@
     width: 90%;
   }
 
+  /* welcome party section styles */
   .party-content {
     padding: 30px;
     flex-direction: column;
@@ -54,9 +60,6 @@
     line-height: 24px;
     margin-bottom: 20px;
   }
-  .party-column-1 a {
-    font-size: 20px;
-  }
   .party-column-2 {
     text-align: center;
   }
@@ -64,8 +67,9 @@
     width: 60%;
   }
 
+  /* address section styles */
   .address-content {
-    padding: 30px;
+    padding: 30px 10px;
   }
   .address-content p {
     font-size: 16px;
@@ -74,23 +78,24 @@
   .address-content button {
     font-size: 14px;
     padding: 12px 20px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
+  /* new offer section styles */
   #new-offer {
     grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
+    gap: 30px;
   }
   .new-offer-content,
   .new-offer-wish {
-    gap: 20px;
+    gap: 10px;
   }
   .new-offer-content h4 {
     font-size: 20px;
   }
   .new-offer-content h2,
   .new-offer-wish h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
   .new-offer-content p,
   .new-offer-wish p {
@@ -101,6 +106,7 @@
     width: 70%;
   }
 
+  /* holiday sale section styles */
   #holiday-sale {
     gap: 150px;
   }
@@ -123,14 +129,14 @@
     right: 10px;
   }
 
+  /* items portfolio section styles */
   .portfolio h4 {
     font-size: 20px;
     margin-bottom: 16px;
   }
   .portfolio h2 {
-    font-family: Merriweather;
     font-size: 36px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
   .portfolio p {
     font-size: 16px;
@@ -141,40 +147,51 @@
     gap: 10px;
   }
 
+  /* newsletter section styles */
   #newsletter {
     gap: 20px;
-    padding: 50px 10px;
+    padding: 30px 10px;
   }
   .newsletter-image img {
     width: 50%;
   }
   .newsletter-content h1 {
-    font-size: 32px;
+    font-size: 24px;
   }
   .newsletter-content p {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 20px;
   }
   .newsletter-btn {
-    width: 90%;
+    width: 100%;
   }
   .newsletter-btn input[type="email"] {
-    width: 60%;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
   }
   .newsletter-btn input[type="submit"] {
-    width: 30%;
-    font-size: 16px;
+    width: fit-content;
+    font-size: 14px;
     padding: 10px;
   }
-}
 
-/* responsive design for medium device */
-@media screen and (min-width: 576.02px) and (max-width: 992px) {
-}
-
-/* responsive design for large device */
-@media screen and (min-width: 992.02px) {
-  /* default styles */
+  /* footer styles */
+  .footer-row-1,
+  .footer-row-2,
+  .footer-row-3 {
+    padding: 30px 10px;
+    font-size: 16px;
+  }
+  .footer-row-1 {
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 0;
+  }
+  .footer-row-2 {
+    font-size: 30px;
+  }
+  .footer-row-3 {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

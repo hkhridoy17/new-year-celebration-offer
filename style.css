@@ -387,8 +387,7 @@ header {
 
 /* footer styles */
 .footer-content {
-  width: 1600px;
-  height: 609px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #070211;
   color: white;
@@ -400,9 +399,9 @@ header {
   font-weight: 500;
 }
 hr {
-  width: 1320px;
+  max-width: 1320px;
   opacity: 0.5;
-  margin: 0 auto;
+  margin: 0 10px;
 }
 .footer-row-1,
 .footer-row-2,
@@ -425,10 +424,4 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* hide section */
-.hide,
-#hide {
-  display: none;
 }
